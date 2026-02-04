@@ -1,0 +1,16 @@
+name: ev_strat_env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - pip
+  - openpyxl
+  - python-dotenv  
+  - pip:
+    - kaggle

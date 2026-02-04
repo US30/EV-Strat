@@ -1,0 +1,6 @@
+
+# Security & Data
+.env
+.ipynb_checkpoints/
+data/
+__pycache__/
