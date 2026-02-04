@@ -14,6 +14,93 @@ EV-Strat is a comprehensive market intelligence system that analyzes the EV mark
 - **Strategic Insights**: Data-driven recommendations for market targeting and infrastructure development
 - **Interactive Dashboard**: Jupyter notebook-based executive dashboard for visualization
 
+## Key Findings
+
+### Market Segmentation Results
+
+![Feature Correlation Matrix](outputs/figures/heatmap.png)
+
+The analysis identified strong correlations between:
+- Population and Literacy (0.97)
+- EV Sales and Charging Stations (0.53)
+
+### Cluster Profiles
+
+![Market Segments Visualization](outputs/figures/market_segments_map.png)
+
+Five distinct market segments were identified:
+
+| Cluster | Population | Literacy | EV Sales | Stations | Districts | Profile |
+|---------|-----------|----------|----------|----------|-----------|---------|
+| 0 | 0.60 | 0.39 | 2.46 | 0.43 | 71 | High Sales, Medium Infrastructure |
+| 1 | 0.83 | 0.73 | -0.29 | -0.21 | 127 | High-Growth Opportunity |
+| 2 | -0.63 | -0.60 | -0.55 | -0.58 | 338 | Rural/Low Adoption |
+| 3 | 3.98 | 4.33 | 0.13 | 1.03 | 13 | Metro Leaders |
+| 4 | 0.16 | 0.28 | 0.51 | 1.97 | 91 | Infrastructure Rich |
+
+### Distribution Analysis
+
+![Distribution Boxplots](outputs/figures/boxplot.png)
+
+The boxplot analysis reveals:
+- Cluster 3 (Metro Leaders) shows highest literacy and population density
+- Cluster 1 represents the largest untapped market (127 districts)
+- Significant infrastructure gaps exist in Clusters 1 and 2
+
+### Clustering Validation
+
+![Clustering Validation](outputs/figures/clustering_validation.png)
+
+The optimal number of clusters (k=5) was determined through:
+- Elbow Method: Identified inflection point at k=5
+- Silhouette Score: Peak performance at k=5
+- Business interpretability of resulting segments
+
+### PCA Analysis
+
+![PCA Scree Plot](outputs/figures/pca_scree_plot.png)
+
+Principal Component Analysis results:
+- PC1 and PC2 capture majority of variance
+- 90% cumulative variance retained
+- Effective dimensionality reduction from 4 to 2-3 components
+
+### Market Opportunity
+
+![Market Opportunity Chart](outputs/figures/market_opportunity_chart.png)
+
+## Strategic Recommendations
+
+### Primary Target: Cluster 1 (High-Growth Opportunity)
+
+**Market Characteristics:**
+- 127 districts (19.8% of India)
+- High literacy rate (0.73) indicating market awareness
+- Low current EV sales (-0.29) showing untapped potential
+- Moderate infrastructure needs
+
+**Recommended Actions:**
+1. **Targeted Marketing Campaign**
+   - Focus on educated, aware consumers
+   - Emphasize total cost of ownership benefits
+   - Leverage digital marketing channels
+
+2. **Infrastructure Development**
+   - Strategic placement of charging stations
+   - Partnership with local governments
+   - Incentivize private charging infrastructure
+
+3. **Product Strategy**
+   - Introduce affordable EV models
+   - Flexible financing options
+   - After-sales service network expansion
+
+### Secondary Focus: Cluster 3 (Metro Leaders)
+
+**Infrastructure Support:**
+- Enhance existing charging network
+- Support high-volume sales with robust infrastructure
+- Premium product offerings for affluent consumers
 
 ## Technology Stack
 
@@ -117,93 +204,6 @@ The project integrates three primary datasets from Kaggle:
 - Identified high-growth opportunity segments
 - Generated actionable recommendations
 
-## Key Findings
-
-### Market Segmentation Results
-
-![Feature Correlation Matrix](outputs/figures/heatmap.png)
-
-The analysis identified strong correlations between:
-- Population and Literacy (0.97)
-- EV Sales and Charging Stations (0.53)
-
-### Cluster Profiles
-
-![Market Segments Visualization](outputs/figures/market_segments_map.png)
-
-Five distinct market segments were identified:
-
-| Cluster | Population | Literacy | EV Sales | Stations | Districts | Profile |
-|---------|-----------|----------|----------|----------|-----------|---------|
-| 0 | 0.60 | 0.39 | 2.46 | 0.43 | 71 | High Sales, Medium Infrastructure |
-| 1 | 0.83 | 0.73 | -0.29 | -0.21 | 127 | High-Growth Opportunity |
-| 2 | -0.63 | -0.60 | -0.55 | -0.58 | 338 | Rural/Low Adoption |
-| 3 | 3.98 | 4.33 | 0.13 | 1.03 | 13 | Metro Leaders |
-| 4 | 0.16 | 0.28 | 0.51 | 1.97 | 91 | Infrastructure Rich |
-
-### Distribution Analysis
-
-![Distribution Boxplots](outputs/figures/boxplot.png)
-
-The boxplot analysis reveals:
-- Cluster 3 (Metro Leaders) shows highest literacy and population density
-- Cluster 1 represents the largest untapped market (127 districts)
-- Significant infrastructure gaps exist in Clusters 1 and 2
-
-### Clustering Validation
-
-![Clustering Validation](outputs/figures/clustering_validation.png)
-
-The optimal number of clusters (k=5) was determined through:
-- Elbow Method: Identified inflection point at k=5
-- Silhouette Score: Peak performance at k=5
-- Business interpretability of resulting segments
-
-### PCA Analysis
-
-![PCA Scree Plot](outputs/figures/pca_scree_plot.png)
-
-Principal Component Analysis results:
-- PC1 and PC2 capture majority of variance
-- 90% cumulative variance retained
-- Effective dimensionality reduction from 4 to 2-3 components
-
-### Market Opportunity
-
-![Market Opportunity Chart](outputs/figures/market_opportunity_chart.png)
-
-## Strategic Recommendations
-
-### Primary Target: Cluster 1 (High-Growth Opportunity)
-
-**Market Characteristics:**
-- 127 districts (19.8% of India)
-- High literacy rate (0.73) indicating market awareness
-- Low current EV sales (-0.29) showing untapped potential
-- Moderate infrastructure needs
-
-**Recommended Actions:**
-1. **Targeted Marketing Campaign**
-   - Focus on educated, aware consumers
-   - Emphasize total cost of ownership benefits
-   - Leverage digital marketing channels
-
-2. **Infrastructure Development**
-   - Strategic placement of charging stations
-   - Partnership with local governments
-   - Incentivize private charging infrastructure
-
-3. **Product Strategy**
-   - Introduce affordable EV models
-   - Flexible financing options
-   - After-sales service network expansion
-
-### Secondary Focus: Cluster 3 (Metro Leaders)
-
-**Infrastructure Support:**
-- Enhance existing charging network
-- Support high-volume sales with robust infrastructure
-- Premium product offerings for affluent consumers
 
 ## Visualizations
 
