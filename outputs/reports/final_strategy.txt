@@ -1,0 +1,21 @@
+=== EV-STRAT: MARKET INTELLIGENCE REPORT ===
+
+1. SEGMENTATION SUMMARY
+            Population  Literate  Total_EV_Sales  Station_Count  District_Count
+Cluster_ID                                                                     
+0             0.597663  0.391523        2.464328       0.428147              71
+1             0.826956  0.732830       -0.291813      -0.210315             127
+2            -0.633548 -0.600672       -0.550730      -0.579739             338
+3             3.978219  4.333388        0.126611       1.026508              13
+4             0.164449  0.283797        0.512017       1.966139              91
+
+2. STRATEGIC RECOMMENDATION
+Strategic Insight:
+Cluster 1 is the 'High-Growth Opportunity'.
+ - It has high Literacy (0.73 avg) indicating awareness,
+ - But significantly lower EV Sales than the Leader (Cluster 3).
+ - This segment covers 19.8% of India (127 districts).
+
+3. ACTION PLAN
+   - Target Marketing: Focus on Cluster 1 (High Literacy/Low Sales).
+   - Infrastructure: Prioritize Charging Stations in Cluster 3 to support existing volume.
